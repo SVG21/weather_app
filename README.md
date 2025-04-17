@@ -48,6 +48,7 @@ lib/
 ├── services/          # API service classes (weather, geocoding, location storage)
 ├── views/             # UI screens (Home, Forecast)
 ├── widgets/           # Reusable UI components (WeatherCard, ForecastCard, etc.)
+├── integration_test/  # Integration test scripts for end-to-end feature validation
 └── main.dart          # Entry point
 ```
 
@@ -99,6 +100,11 @@ flutter test integration_test/app_test.dart
 
 - Provides error messages with a retry button for network or API failures.
 - Uses fallback UI for missing or incomplete data.
+
+### Integration Testing
+
+- End-to-end tests simulate real user flows including adding/removing locations, navigation, and error handling.
+- Ensures reliable behavior and UI consistency through Riverpod-powered state changes.
 
 ---
 
