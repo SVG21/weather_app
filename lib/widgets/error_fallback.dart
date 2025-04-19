@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class ErrorFallback extends StatelessWidget {
   final String message;
 
-  const ErrorFallback({super.key, this.message = "Something went wrong. Please try again."});
+  const ErrorFallback({super.key, this.message = "Something went wrong. Please try again or allow location permission."});
 
   @override
   Widget build(BuildContext context) {
