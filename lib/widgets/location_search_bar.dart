@@ -21,7 +21,7 @@ class LocationSearchBar extends ConsumerWidget {
             onPressed: () async {
               final added = await ref
                   .read(locationStateNotifierProvider.notifier)
-                  .addLocation(_controller.text);
+                  .addLocation(_controller.text.trim());
 
               // Show a snack bar to inform the user about the result of the operation.
               if (context.mounted) {
